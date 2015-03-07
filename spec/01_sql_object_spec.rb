@@ -144,7 +144,6 @@ describe SQLObject do
       human.fname = 'Matthew'
       human.lname = 'von Rubens'
       human.update
-
       # pull the human again
       human = Human.find(2)
       expect(human.fname).to eq('Matthew')
